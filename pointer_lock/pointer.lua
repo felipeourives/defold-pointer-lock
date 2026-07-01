@@ -1,7 +1,7 @@
 local M = {}
 
-M.DISPLAY_WIDTH = tonumber(sys.get_config("display.width"))
-M.DISPLAY_HEIGHT = tonumber(sys.get_config("display.height"))
+M.DISPLAY_WIDTH = sys.get_config_int("display.width")
+M.DISPLAY_HEIGHT = sys.get_config_int("display.height")
 
 M.locked = false
 
